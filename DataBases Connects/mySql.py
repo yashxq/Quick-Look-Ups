@@ -1,5 +1,5 @@
 import mysql.connector
-mydb = mysql.connector.connect(host='localhost',user='root',password='123456',database="farmers_market" )
+mydb = mysql.connector.connect(host='localhost',user='root',password='123456',database="farmers_market",auth_plugin='mysql_native_password')
 
 print(mydb)
 
